@@ -18,5 +18,5 @@ server:
 weather:
   api:
     url: http://api.weatherapi.com/v1
-    key: 35bccd4d956f44299b7171338240601
+    key: key
 
