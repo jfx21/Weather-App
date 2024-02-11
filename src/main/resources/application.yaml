@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/users?serverTimezone=UTC #${DB_URL}
+    username: root #${DB_USER}
+    password: root #${DB_PASS}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+jwt:
+  secret-key: 204E632266556A586E3272357538782F413F4428472B4B6250645367566B5990242422211124224242242424242  #${JWT_SECRET_KEY}
+  expiration: 86400000
+  cookie-name: jwt-token
+server:
+  port: 8080
+
+weather:
+  api:
+    url: http://api.weatherapi.com/v1
+    key: 35bccd4d956f44299b7171338240601
+
